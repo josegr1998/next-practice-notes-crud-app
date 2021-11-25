@@ -1,10 +1,13 @@
 import "../styles/globals.css";
 import { TaskProvider } from "../context/taskContext";
+import Layout from "../Layout/Layout";
 
 function MyApp({ Component, pageProps }) {
   return (
     <TaskProvider>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </TaskProvider>
   );
 }
