@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <Wrapper>
       <h1>Created By </h1>
-      <a href='https://github.com/josegr1998' target='_blank'>
+      <a href='https://github.com/josegr1998' target='_blank' rel='noreferrer'>
         <span>
           <AiOutlineGithub className='icon' />
         </span>
