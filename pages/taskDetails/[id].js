@@ -9,7 +9,7 @@ import Router from "next/router";
 //{moment(createdAt).fromNow()}
 //links do not accept functions apparently
 
-const taskDetails = ({ task }) => {
+const TaskDetails = ({ task }) => {
   console.log(task);
   const { setEditTask } = useTaskContext();
 
@@ -107,4 +107,4 @@ export const getServerSideProps = async (context) => {
   };
 };
 
-export default taskDetails;
+export default TaskDetails;

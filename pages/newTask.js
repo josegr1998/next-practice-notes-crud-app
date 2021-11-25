@@ -5,7 +5,7 @@ import axios from "axios";
 import { useTaskContext } from "../context/taskContext";
 //new task also used to edit the tasks
 //SOLO FALTA LA FUNCIONALIDAD DE DELETE
-const newTask = () => {
+const NewTask = () => {
   const { editTask, changeEditTask, deleteEditTask } = useTaskContext();
 
   const [formState, setFormState] = useState({ title: "", details: "" });
@@ -144,4 +144,4 @@ const Wrapper = styled.section`
   }
 `;
 
-export default newTask;
+export default NewTask;
